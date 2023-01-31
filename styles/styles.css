@@ -1,0 +1,159 @@
+body {
+    background-color: #C6E4E7;
+    font-family: 'Space Mono', monospace;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.logo-section {
+    display: flex;
+    margin: auto;
+}
+
+.input-box {
+    position: relative;
+}
+
+.input-icon {
+    position: absolute;
+    top: 35%;
+    left: 3%;
+}
+
+.left-section,
+.right-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.right-section {
+    background-color: #00474B;
+    justify-content: space-between;
+
+}
+
+.left-heading {
+    font-size: 16px;
+    opacity: 0.75;
+}
+
+#bill,
+#people {
+    border: none;
+    background-color: #F3F8FB;
+    width: 100%;
+    padding: 12px 5px;
+    text-align: end;
+    border-radius: 5px;
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+input:focus,
+input:active {
+    border: #57A89E;
+    outline: 2px solid #57A89E;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.tip-calculator {
+    background-color: #FFFFFF;
+    display: flex;
+    width: 70%;
+    padding: 2rem;
+    gap: 2rem;
+    margin: auto;
+    border-radius: 20px;
+}
+
+#reset-btn {
+    font-size: 21px;
+    padding: 12px 5px;
+    background-color: #9EE8E0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 900;
+    font-family: 'Space Mono';
+    border-radius: 12px;
+}
+
+.bill-sub-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sub-heading {
+    color: #DDFFFF;
+}
+
+.span {
+    display: block;
+    color: #67959B;
+}
+
+.money {
+    color: #25C3AD;
+    font-size: 32px;
+    font-weight: 900;
+
+}
+
+.tip-section {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 1rem;
+}
+
+.tip-percentage {
+    text-align: center;
+    background-color: #01464D;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input.tip-percentage {
+    background-color: #F3F8FB;
+    border: none;
+    font-family: 'Space Mono', monospace;
+    color: #00474B;
+}
+
+.tip-percentage.active {
+    background-color: #9EE8E0;
+    color: #226A6B;
+}
+
+input.tip-percentage.active {
+    color: #0A4142;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .tip-calculator {
+        flex-direction: column;
+        width: 85%;
+        padding: 1rem;
+    }
+
+    .left-section,
+    .right-section {
+        box-sizing: border-box;
+        padding: 1rem;
+    }
+
+}
